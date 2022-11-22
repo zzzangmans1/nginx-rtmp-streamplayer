@@ -10,15 +10,38 @@
     <ImageView
         android:id="@+id/ivBattery"
         android:layout_gravity="center"
-        android:src="@drawable/battery_0"
+        android:src="@drawable/live_logo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="200dp"/>
 
     <EditText
         android:id="@+id/edtBattery"
         android:enabled="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INPUT URL"/>
+
+        <EditText
+            android:id="@+id/edtLoad"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="입력해주세요" />
+
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOAD"/>
+    </LinearLayout>
 
     <WebView
         android:id="@+id/webview"
@@ -32,4 +55,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </LinearLayout>
